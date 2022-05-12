@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fragment Examples</title>
+</head>
+<body>
+    <h1>This web page is a test for Thymeleaf fragments</h1>
+    <!-- footer_template is the name of the footer fragment html file and footer1 is fragment id -->
+<!--        dynamic args being passed to footer1 that can be accessed in the fragment-->
+    <footer th:replace="footer_template::footer1(${myTitle},'Learning Spring')"></footer>
+</body>
+</html>
